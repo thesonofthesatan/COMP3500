@@ -1,0 +1,878 @@
+Script started on Wed 20 Jan 2021 02:33:47 PM CST
+[?1034hbash-4.2$ more/proc[K[K[K[K[K /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 26
+model name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+stepping	: 5
+microcode	: 0x1d
+cpu MHz		: 2793.075
+cache size	: 8192 KB
+physical id	: 1
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+e36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 1
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 0
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 0
+[7m--More--(0%)[27minitial apicid	: 0
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 2
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 1
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 18
+[7m--More--(0%)[27minitial apicid	: 18
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 3
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 1
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 2
+[7m--More--(0%)[27minitial apicid	: 2
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 4
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 2
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 20
+[7m--More--(0%)[27minitial apicid	: 20
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 5
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 2
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 4
+[7m--More--(0%)[27minitial apicid	: 4
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 6
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 3
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 22
+[7m--More--(0%)[27minitial apicid	: 22
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 7
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 3
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 6
+[7m--More--(0%)[27minitial apicid	: 6
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 8
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 0
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 17
+[7m--More--(0%)[27minitial apicid	: 17
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 9
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 0
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 1
+[7m--More--(0%)[27minitial apicid	: 1
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 10
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 1
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 19
+[7m--More--(0%)[27minitial apicid	: 19
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 11
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 1
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 3
+[7m--More--(0%)[27minitial apicid	: 3
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 12
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 2
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 21
+[7m--More--(0%)[27minitial apicid	: 21
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 13
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 2
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 5
+[7m--More--(0%)[27minitial apicid	: 5
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 14
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 1
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 3
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 23
+[7m--More--(0%)[27minitial apicid	: 23
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5586.15
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+[7m--More--(0%)[27m[Kprocessor	: 15
+[7m--More--(0%)[27m[Kvendor_id	: GenuineIntel
+[7m--More--(0%)[27m[Kcpu family	: 6
+[7m--More--(0%)[27m[Kmodel		: 26
+[7m--More--(0%)[27m[Kmodel name	: Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz
+[7m--More--(0%)[27m[Kstepping	: 5
+[7m--More--(0%)[27m[Kmicrocode	: 0x1d
+[7m--More--(0%)[27m[Kcpu MHz		: 2793.075
+[7m--More--(0%)[27m[Kcache size	: 8192 KB
+[7m--More--(0%)[27m[Kphysical id	: 0
+[7m--More--(0%)[27m[Ksiblings	: 8
+[7m--More--(0%)[27m[Kcore id		: 3
+[7m--More--(0%)[27m[Kcpu cores	: 4
+[7m--More--(0%)[27m[Kapicid		: 7
+[7m--More--(0%)[27minitial apicid	: 7
+[7m--More--(0%)[27m[Kfpu		: yes
+[7m--More--(0%)[27mfpu_exception	: yes
+[7m--More--(0%)[27m[Kcpuid level	: 11
+[7m--More--(0%)[27m[Kwp		: yes
+[7m--More--(0%)[27m[Kflags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat ps
+[7m--More--(0%)[27me36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc 
+[7m--More--(0%)[27march_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni dtes
+[7m--More--(0%)[27m64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm ss
+[7m--More--(0%)[27mbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida spec_ctrl intel_st
+[7m--More--(0%)[27mibp flush_l1d
+[7m--More--(0%)[27m[Kbogomips	: 5585.07
+[7m--More--(0%)[27mclflush size	: 64
+[7m--More--(0%)[27mcache_alignment	: 64
+[7m--More--(0%)[27maddress sizes	: 40 bits physical, 48 bits virtual
+[7m--More--(0%)[27mpower management:
+[7m--More--(0%)[27m[K
+bash-4.2$ ls >[K[K[K[Kmore /proc/meminfo [K
+MemTotal:       24508112 kB
+MemFree:         8146532 kB
+MemAvailable:   23107732 kB
+Buffers:          826508 kB
+Cached:          9452148 kB
+SwapCached:            0 kB
+Active:          3832356 kB
+Inactive:        6646100 kB
+Active(anon):     379344 kB
+Inactive(anon):   141508 kB
+Active(file):    3453012 kB
+Inactive(file):  6504592 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      12386300 kB
+SwapFree:       12386300 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:        199800 kB
+Mapped:           111244 kB
+Shmem:            321068 kB
+Slab:            5533176 kB
+SReclaimable:    5415904 kB
+[7m--More--(0%)[27mSUnreclaim:       117272 kB
+[7m--More--(0%)[27mKernelStack:        5760 kB
+[7m--More--(0%)[27mPageTables:        10584 kB
+[7m--More--(0%)[27mNFS_Unstable:          0 kB
+[7m--More--(0%)[27mBounce:                0 kB
+[7m--More--(0%)[27mWritebackTmp:          0 kB
+[7m--More--(0%)[27mCommitLimit:    24640356 kB
+[7m--More--(0%)[27mCommitted_AS:    1591644 kB
+[7m--More--(0%)[27mVmallocTotal:   34359738367 kB
+[7m--More--(0%)[27mVmallocUsed:      331108 kB
+[7m--More--(0%)[27mVmallocChunk:   34346168316 kB
+[7m--More--(0%)[27mPercpu:             3776 kB
+[7m--More--(0%)[27mHardwareCorrupted:     0 kB
+[7m--More--(0%)[27mAnonHugePages:     24576 kB
+[7m--More--(0%)[27mCmaTotal:              0 kB
+[7m--More--(0%)[27mCmaFree:               0 kB
+[7m--More--(0%)[27mHugePages_Total:       0
+[7m--More--(0%)[27mHugePages_Free:        0
+[7m--More--(0%)[27mHugePages_Rsvd:        0
+[7m--More--(0%)[27mHugePages_Surp:        0
+[7m--More--(0%)[27mHugepagesize:       2048 kB
+[7m--More--(0%)[27mDirectMap4k:      157092 kB
+[7m--More--(0%)[27mDirectMap2M:    24995840 kB
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ more /proc/interrupts
+            CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6    
+   CPU7       CPU8       CPU9       CPU10      CPU11      CPU12      CPU13      CPU14 
+     CPU15      
+   0:  682040656          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+        0   IO-APIC-edge      timer
+   8:          1          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+        0   IO-APIC-edge      rtc0
+   9:          0          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+        0   IO-APIC-fasteoi   acpi
+  16:     114078          0          0    1592353          0          0          0    
+      0          0          0          0       5648          0          0          0  
+        0   IO-APIC-fasteoi   ioc0
+  17:          0          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+        0   IO-APIC-fasteoi   uhci_hcd:usb3, ata_piix
+  18:          0          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+        0   IO-APIC-fasteoi   uhci_hcd:usb4
+  19:          0          0          0          0          0          0          0    
+      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   IO-APIC-fasteoi   ehci_hcd:usb1
+[7m--More--(0%)[27m  20:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   IO-APIC-fasteoi   uhci_hcd:usb6
+[7m--More--(0%)[27m  21:         55          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   IO-APIC-fasteoi   ehci_hcd:usb2, uhci_hcd:usb5, uhci_hcd:usb7
+[7m--More--(0%)[27m  25:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      PCIe PME
+[7m--More--(0%)[27m  26:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      PCIe PME
+[7m--More--(0%)[27m  27:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      PCIe PME
+[7m--More--(0%)[27m  28:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      PCIe PME
+[7m--More--(0%)[27m  32:        904          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-async@pci:0000:04:00.0
+[7m--More--(0%)[27m  33:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-1@0000:04:00.0
+[7m--More--(0%)[27m  34:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-2@0000:04:00.0
+[7m--More--(0%)[27m  35:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-3@0000:04:00.0
+[7m--More--(0%)[27m  36:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-4@0000:04:00.0
+[7m--More--(0%)[27m  37:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-5@0000:04:00.0
+[7m--More--(0%)[27m  38:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-6@0000:04:00.0
+[7m--More--(0%)[27m  39:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-7@0000:04:00.0
+[7m--More--(0%)[27m  40:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-8@0000:04:00.0
+[7m--More--(0%)[27m  41:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-9@0000:04:00.0
+[7m--More--(0%)[27m  42:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-10@0000:04:00.0
+[7m--More--(0%)[27m  43:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-11@0000:04:00.0
+[7m--More--(0%)[27m  44:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-12@0000:04:00.0
+[7m--More--(0%)[27m  45:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-13@0000:04:00.0
+[7m--More--(0%)[27m  46:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-14@0000:04:00.0
+[7m--More--(0%)[27m  47:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-15@0000:04:00.0
+[7m--More--(0%)[27m  48:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-16@0000:04:00.0
+[7m--More--(0%)[27m  49:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-17@0000:04:00.0
+[7m--More--(0%)[27m  50:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-18@0000:04:00.0
+[7m--More--(0%)[27m  51:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-19@0000:04:00.0
+[7m--More--(0%)[27m  52:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-20@0000:04:00.0
+[7m--More--(0%)[27m  53:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-21@0000:04:00.0
+[7m--More--(0%)[27m  54:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-22@0000:04:00.0
+[7m--More--(0%)[27m  55:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-23@0000:04:00.0
+[7m--More--(0%)[27m  56:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-24@0000:04:00.0
+[7m--More--(0%)[27m  57:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-25@0000:04:00.0
+[7m--More--(0%)[27m  58:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-26@0000:04:00.0
+[7m--More--(0%)[27m  59:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-27@0000:04:00.0
+[7m--More--(0%)[27m  60:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-28@0000:04:00.0
+[7m--More--(0%)[27m  61:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-29@0000:04:00.0
+[7m--More--(0%)[27m  62:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-30@0000:04:00.0
+[7m--More--(0%)[27m  63:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-31@0000:04:00.0
+[7m--More--(0%)[27m  64:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      mlx4-32@0000:04:00.0
+[7m--More--(0%)[27m  65:        166          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0   57782959          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-0
+[7m--More--(0%)[27m  66:      65002          0     155285        184       1889          0          0    
+[7m--More--(0%)[27m      0          0          0          0    5636902          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-1
+[7m--More--(0%)[27m  67:        291          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m  9430287   PCI-MSI-edge      em1-2
+[7m--More--(0%)[27m  68:      87768          0      77131          0          0          0          0    
+[7m--More--(0%)[27m      0          0    5162067          0       8111          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-3
+[7m--More--(0%)[27m  69:        354    8905371          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-4
+[7m--More--(0%)[27m  70:        158          0          0          0    9348827          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-5
+[7m--More--(0%)[27m  71:      35282          0   21961798     134313          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0     727522          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-6
+[7m--More--(0%)[27m  72:        155          0          0          0          0          0    7789328    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em1-7
+[7m--More--(0%)[27m  74:          1          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-0
+[7m--More--(0%)[27m  75:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-1
+[7m--More--(0%)[27m  76:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-2
+[7m--More--(0%)[27m  77:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-3
+[7m--More--(0%)[27m  78:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-4
+[7m--More--(0%)[27m  79:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-5
+[7m--More--(0%)[27m  80:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-6
+[7m--More--(0%)[27m  81:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   PCI-MSI-edge      em2-7
+[7m--More--(0%)[27m NMI:      60763      19287      17959      14660      15106      14914      14248    
+[7m--More--(0%)[27m  12746      18720      14547      14910      17018      12535      13365       9952  
+[7m--More--(0%)[27m    12867   Non-maskable interrupts
+[7m--More--(0%)[27m LOC:   11270835   73880136  132453962   42765009   66546004   33892837   62185286   3
+[7m--More--(0%)[27m1577613   16953921  112719092   30981867   78812110   17549415   16510231   13082992  
+[7m--More--(0%)[27m 57447645   Local timer interrupts
+[7m--More--(0%)[27m SPU:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Spurious interrupts
+[7m--More--(0%)[27m PMI:      60763      19287      17959      14660      15106      14914      14248    
+[7m--More--(0%)[27m  12746      18720      14547      14910      17018      12535      13365       9952  
+[7m--More--(0%)[27m    12867   Performance monitoring interrupts
+[7m--More--(0%)[27m IWI:     450770   11550444   11514187    1223653   10192468     439252    9542721    
+[7m--More--(0%)[27m 567021      20985    2961340    2395778   16135961      25889      35855      19549  
+[7m--More--(0%)[27m  9381190   IRQ work interrupts
+[7m--More--(0%)[27m RTR:         15          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   APIC ICR read retries
+[7m--More--(0%)[27m RES:   10493334    9364662    8234928    8620941    8015501    8587815    8452489    
+[7m--More--(0%)[27m9190610   10512640    9195935   10798315   10826634   11879861   10379564   10011227  
+[7m--More--(0%)[27m  9347880   Rescheduling interrupts
+[7m--More--(0%)[27m CAL:     175850      12408     107595      15392     150655       8881     183296    
+[7m--More--(0%)[27m  15126      23997       4857     112842      12797      24953       6576      26530  
+[7m--More--(0%)[27m     5323   Function call interrupts
+[7m--More--(0%)[27m TLB:    1440934    1550169    1525935    1549817    1490248    1544183    1526620    
+[7m--More--(0%)[27m1498882    1571329    1499802    1497619    1493667    1468558    1486144    1393721  
+[7m--More--(0%)[27m  1500929   TLB shootdowns
+[7m--More--(0%)[27m TRM:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Thermal event interrupts
+[7m--More--(0%)[27m THR:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Threshold APIC interrupts
+[7m--More--(0%)[27m DFR:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Deferred Error APIC interrupts
+[7m--More--(0%)[27m MCE:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Machine check exceptions
+[7m--More--(0%)[27m MCP:      42684      42684      42684      42684      42684      42684      42684    
+[7m--More--(0%)[27m  42684      42684      42684      42684      42684      42684      42684      42684  
+[7m--More--(0%)[27m    42684   Machine check polls
+[7m--More--(0%)[27m ERR:          0
+[7m--More--(0%)[27m MIS:          0
+[7m--More--(0%)[27m PIN:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Posted-interrupt notification event
+[7m--More--(0%)[27m NPI:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Nested posted-interrupt event
+[7m--More--(0%)[27m PIW:          0          0          0          0          0          0          0    
+[7m--More--(0%)[27m      0          0          0          0          0          0          0          0  
+[7m--More--(0%)[27m        0   Posted-interrupt wakeup event
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ lspci
+00:00.0 Host bridge: Intel Corporation 5500 I/O Hub to ESI Port (rev 13)
+00:01.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 1 (rev 13)
+00:07.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 7 (rev 13)
+00:09.0 PCI bridge: Intel Corporation 7500/5520/5500/X58 I/O Hub PCI Express Root Port 9 (rev 13)
+00:14.0 PIC: Intel Corporation 7500/5520/5500/X58 I/O Hub System Management Registers (rev 13)
+00:14.1 PIC: Intel Corporation 7500/5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers (rev 13)
+00:14.2 PIC: Intel Corporation 7500/5520/5500/X58 I/O Hub Control Status and RAS Registers (rev 13)
+00:1a.0 USB controller: Intel Corporation 82801I (ICH9 Family) USB UHCI Controller #4 (rev 02)
+00:1a.1 USB controller: Intel Corporation 82801I (ICH9 Family) USB UHCI Controller #5 (rev 02)
+00:1a.7 USB controller: Intel Corporation 82801I (ICH9 Family) USB2 EHCI Controller #2 (rev 02)
+00:1c.0 PCI bridge: Intel Corporation 82801I (ICH9 Family) PCI Express Port 1 (rev 02)
+00:1d.0 USB controller: Intel Corporation 82801I (ICH9 Family) USB UHCI Controller #1 (rev 02)
+00:1d.1 USB controller: Intel Corporation 82801I (ICH9 Family) USB UHCI Controller #2 (rev 02)
+00:1d.2 USB controller: Intel Corporation 82801I (ICH9 Family) USB UHCI Controller #3 (rev 02)
+00:1d.7 USB controller: Intel Corporation 82801I (ICH9 Family) USB2 EHCI Controller #1 (rev 02)
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 92)
+00:1f.0 ISA bridge: Intel Corporation 82801IB (ICH9) LPC Interface Controller (rev 02)
+00:1f.5 IDE interface: Intel Corporation 82801I (ICH9 Family) 2 port SATA Controller [IDE mode] (rev 02)
+01:00.0 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme II BCM5709S Gigabit Ethernet (rev 20)
+01:00.1 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme II BCM5709S Gigabit Ethernet (rev 20)
+02:00.0 SCSI storage controller: Broadcom / LSI SAS1068E PCI-Express Fusion-MPT SAS (rev 08)
+04:00.0 InfiniBand: Mellanox Technologies MT25408A0-FCC-QI ConnectX, Dual Port 40Gb/s InfiniBand / 10GigE Adapter IC with PCIe 2.0 x8 5.0GT/s In... (rev a0)
+05:03.0 VGA compatible controller: Matrox Electronics Systems Ltd. MGA G200eW WPCM450 (rev 0a)
+fe:00.0 Host bridge: Intel Corporation Xeon 5500/Core i7 QuickPath Architecture Generic Non-Core Registers (rev 05)
+fe:00.1 Host bridge: Intel Corporation Xeon 5500/Core i7 QuickPath Architecture System Address Decoder (rev 05)
+fe:02.0 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Link 0 (rev 05)
+fe:02.1 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Physical 0 (rev 05)
+fe:02.4 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Link 1 (rev 05)
+fe:02.5 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Physical 1 (rev 05)
+fe:03.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller (rev 05)
+fe:03.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Target Address Decoder (rev 05)
+fe:03.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller RAS Registers (rev 05)
+fe:03.4 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Test Registers (rev 05)
+fe:04.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Control Registers (rev 05)
+fe:04.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Address Registers (rev 05)
+fe:04.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Rank Registers (rev 05)
+fe:04.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Thermal Control Registers (rev 05)
+fe:05.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Control Registers (rev 05)
+fe:05.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Address Registers (rev 05)
+fe:05.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Rank Registers (rev 05)
+fe:05.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Thermal Control Registers (rev 05)
+fe:06.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Control Registers (rev 05)
+fe:06.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Address Registers (rev 05)
+fe:06.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Rank Registers (rev 05)
+fe:06.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Thermal Control Registers (rev 05)
+ff:00.0 Host bridge: Intel Corporation Xeon 5500/Core i7 QuickPath Architecture Generic Non-Core Registers (rev 05)
+ff:00.1 Host bridge: Intel Corporation Xeon 5500/Core i7 QuickPath Architecture System Address Decoder (rev 05)
+ff:02.0 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Link 0 (rev 05)
+ff:02.1 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Physical 0 (rev 05)
+ff:02.4 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Link 1 (rev 05)
+ff:02.5 Host bridge: Intel Corporation Xeon 5500/Core i7 QPI Physical 1 (rev 05)
+ff:03.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller (rev 05)
+ff:03.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Target Address Decoder (rev 05)
+ff:03.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller RAS Registers (rev 05)
+ff:03.4 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Test Registers (rev 05)
+ff:04.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Control Registers (rev 05)
+ff:04.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Address Registers (rev 05)
+ff:04.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Rank Registers (rev 05)
+ff:04.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 0 Thermal Control Registers (rev 05)
+ff:05.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Control Registers (rev 05)
+ff:05.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Address Registers (rev 05)
+ff:05.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Rank Registers (rev 05)
+ff:05.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 1 Thermal Control Registers (rev 05)
+ff:06.0 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Control Registers (rev 05)
+ff:06.1 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Address Registers (rev 05)
+ff:06.2 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Rank Registers (rev 05)
+ff:06.3 Host bridge: Intel Corporation Xeon 5500/Core i7 Integrated Memory Controller Channel 2 Thermal Control Registers (rev 05)
+bash-4.2$ 
+bash-4.2$ 
+bash-4.2$ exit
+exit
+
+Script done on Wed 20 Jan 2021 02:36:15 PM CST
