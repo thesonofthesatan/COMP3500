@@ -1,0 +1,79 @@
+Script started on Thu 21 Jan 2021 10:05:51 PM CST
+[?1034hbash-4.2$ gcc -g -lm -o simple simple.c 
+bash-4.2$ man ldd
+[?1049h[?1h=LDD(1)                       Linux Programmer's Manual                       LDD(1)[m
+[m
+[1mNAME[0m[m
+       ldd - print shared library dependencies[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mldd[0m [OPTION]... FILE...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mldd[0m  prints  the shared libraries required by each program or shared library[m
+       specified on the command line.[m
+[m
+   [1mSecurity[0m[m
+       In the usual case, [1mldd[0m invokes the standard dynamic  linker  (see  [1mld.so[0m(8))[m
+       with the [1mLD_TRACE_LOADED_OBJECTS[0m environment variable set to 1, which causes[m
+       the linker to display the library dependencies.  Be aware, however, that  in[m
+       some  circumstances,  some  versions of [1mldd[0m may attempt to obtain the depen‐[m
+       dency information by directly executing the program.  Thus, you should [4mnever[24m[m
+       employ  [1mldd[0m  on an untrusted executable, since this may result in the execu‐[m
+       tion of arbitrary code.  A safer alternative  when  dealing  with  untrusted[m
+       executables is:[m
+[m
+           $ objdump -p /path/to/program | grep NEEDED[m
+[m
+[7m Manual page ldd(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ ldd simple
+	linux-vdso.so.1 =>  (0x00007ffc6c7ea000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f9952c97000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f99528c9000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f9952f99000)
+bash-4.2$ ./simple
+2.100000 bash-4.2$ vim .gdbinit
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;25r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[25;1H".gdbinit" 4L, 53C[>c[1;1H[38;5;130mfile[m simple
+[38;5;130mbreak[m main
+[38;5;130mbreak[m sqrt
+[38;5;130minfo[m [32mregisters[m
+[94m~                                                                                     [6;1H~                                                                                     [7;1H~                                                                                     [8;1H~                                                                                     [9;1H~                                                                                     [10;1H~                                                                                     [11;1H~                                                                                     [12;1H~                                                                                     [13;1H~                                                                                     [14;1H~                                                                                     [15;1H~                                                                                     [16;1H~                                                                                     [17;1H~                                                                                     [18;1H~                                                                                     [19;1H~                                                                                     [20;1H~                                                                                     [21;1H~                                                                                     [22;1H~                                                                                     [23;1H~                                                                                     [24;1H~                                                                                     [m[25;69H4,1[11CAll[4;1H[?12l[?25h[27m[m[H[2J[?25l[1;1H[93mfile[m simple
+[93mbreak[m main
+[93mbreak[m sqrt
+[93minfo[m [38;5;121mregisters[m
+[94m~                                                                                     [6;1H~                                                                                     [7;1H~                                                                                     [8;1H~                                                                                     [9;1H~                                                                                     [10;1H~                                                                                     [11;1H~                                                                                     [12;1H~                                                                                     [13;1H~                                                                                     [14;1H~                                                                                     [15;1H~                                                                                     [16;1H~                                                                                     [17;1H~                                                                                     [18;1H~                                                                                     [19;1H~                                                                                     [20;1H~                                                                                     [21;1H~                                                                                     [22;1H~                                                                                     [23;1H~                                                                                     [24;1H~                                                                                     [m[25;69H4,1[11CAll".gdbinit" 4L, 53C[4;1H[?12l[?25h[?25l[25;1H[K[25;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[25;1H[K[25;1H[?1l>[?12l[?25h[?1049lbash-4.2$ gdb simple
+[?1034hGNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/u1/mzs0104/project1/simple...done.
+warning: File "/home/u1/mzs0104/project1/.gdbinit" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load:/usr/bin/mono-gdb.py".
+To enable execution of this file add
+	add-auto-load-safe-path /home/u1/mzs0104/project1/.gdbinit
+line to your configuration file "/home/u1/mzs0104/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/u1/mzs0104/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+(gdb) r
+Starting program: /home/u1/mzs0104/project1/simple 
+2.100000 [Inferior 1 (process 7615) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) s
+The program is not being run.
+(gdb) c
+The program is not being run.
+(gdb) exit'[K
+Undefined command: "exit".  Try "help".
+(gdb) q
+bash-4.2$ exit
+exit
+
+Script done on Thu 21 Jan 2021 10:08:32 PM CST
